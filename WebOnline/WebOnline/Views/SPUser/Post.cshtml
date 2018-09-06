@@ -1,0 +1,105 @@
+﻿@model IEnumerable<WebOnline.Models.Employee>
+
+@{
+    ViewBag.Title = "Post";
+}
+
+<h2>Post</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EmFname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmLname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.admin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.addJob)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EditJob)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Department)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SaleName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CHK)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DepID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.stat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmFname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmLname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.admin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.addJob)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EditJob)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Department)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SaleName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CHK)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DepID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.stat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EmID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EmID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EmID })
+        </td>
+    </tr>
+}
+
+</table>

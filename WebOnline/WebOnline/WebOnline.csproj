@@ -157,6 +157,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\FromBodyAttribute.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SPUserController.cs" />
     <Compile Include="Global.asax.cs">
@@ -7379,6 +7380,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Calendar\Index.cshtml" />
     <Content Include="Views\SPUser\GetUser.cshtml" />
+    <Content Include="Views\SPUser\GetCheck.cshtml" />
+    <Content Include="Views\SPUser\Post.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -7421,7 +7424,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>3530</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:3530/</IISUrl>
+          <IISUrl>http://localhost:8001/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
